@@ -1,0 +1,181 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding-top: 80px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#mainNavbar {
+  background-color: #0d6efd;
+}
+
+#mainNavbar .navbar-brand,
+#mainNavbar .nav-link {
+  color: #ffffff;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #ffd43b;
+}
+
+.section-anchor {
+  scroll-margin-top: 90px;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+  color: white;
+  padding: 60px 0;
+}
+
+.profile-photo {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.badge-custom {
+  background-color: #ffffff;
+  color: #0d6efd;
+  font-size: 0.95rem;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.bg-section {
+  background-color: #eef4ff;
+}
+
+.section-title h2 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.card-soft {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-soft:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+footer {
+  background-color: #0d6efd;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MODO OSCURO */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode #mainNavbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .hero-section {
+  background: linear-gradient(135deg, #1f1f1f, #343a40);
+}
+
+body.dark-mode .card-soft {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .bg-section {
+  background-color: #181818;
+}
+
+body.dark-mode .section-title h2,
+body.dark-mode .text-primary {
+  color: #6ea8fe !important;
+}
+
+body.dark-mode .text-muted {
+  color: #cfcfcf !important;
+}
+
+body.dark-mode .badge-custom {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+
+body.dark-mode .form-control {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #555;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #bbbbbb;
+}
+
+body.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+/* TEMA VERDE */
+body.alt-colors #mainNavbar,
+body.alt-colors footer {
+  background-color: #198754;
+}
+
+body.alt-colors .hero-section {
+  background: linear-gradient(135deg, #198754, #75b798);
+}
+
+body.alt-colors .section-title h2,
+body.alt-colors .text-primary {
+  color: #198754 !important;
+}
+
+body.alt-colors .badge-custom {
+  color: #198754;
+}
+
+body.alt-colors .bg-section {
+  background-color: #eefaf3;
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+}
